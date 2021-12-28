@@ -14,7 +14,10 @@ namespace Binance.Net.Converters
             new KeyValuePair<AccountType, string>(AccountType.Spot, "SPOT"),
             new KeyValuePair<AccountType, string>(AccountType.Margin, "MARGIN"),
             new KeyValuePair<AccountType, string>(AccountType.Futures, "FUTURES"),
-            new KeyValuePair<AccountType, string>(AccountType.Leveraged, "LEVERAGED")
+            new KeyValuePair<AccountType, string>(AccountType.Leveraged, "LEVERAGED"),
+
+            // TM: https://github.com/JKorf/Binance.Net/issues/958
+            new KeyValuePair<AccountType, string>(AccountType.Spot, "TRD_GRP_002"),
         };
     }
 }
